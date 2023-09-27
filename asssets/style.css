@@ -39,6 +39,28 @@ body {
 }
 
 
+.social-container a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border: 2px solid #69c3e4;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #b6b6b6;
+    margin: 5px 5px;
+}
+
+.social-container a:hover {
+    transform: scale(1.1);
+    background-color: rgb(36, 36, 36);
+    color: #69c3e4;
+    transition: ease.5s;
+}
+
+
 
 html {
     scroll-behavior: smooth;
