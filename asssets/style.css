@@ -38,26 +38,76 @@ body {
     }
 }
 
+.social {
+    align-items: center;
+    justify-content: center;
+}
 
-.social-container a {
+.social a {
     display: inline-flex;
     width: 40px;
     height: 40px;
     text-decoration: none;
-    border: 2px solid #69c3e4;
-    border-radius: 100%;
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
-    color: #b6b6b6;
-    margin: 5px 5px;
+    border: rgb(250, 193, 6) 2px solid;
+    font-size: 22px;
+    color: rgb(250, 193, 6);
+    margin: 10px;
 }
 
-.social-container a:hover {
+.social a:hover {
     transform: scale(1.1);
-    background-color: rgb(36, 36, 36);
-    color: #69c3e4;
+    background: #26292F;
     transition: ease.5s;
+}
+
+.profile-img {
+    display: flex;
+    height: 340px;
+    width: 340px;
+    margin: auto 0;
+    border-radius: 300px;
+}
+
+.profile-img img {
+    border-radius: 300px;
+    background-color: white;
+    box-shadow: -5px -5px 30px #3f3f3f,
+        10px 10px 20px #303030;
+}
+
+.profile-img img:hover {
+    transform: scale(1.1);
+    background: transparent;
+    transition: .5s;
+}
+
+.profile-text {
+    align-self: center;
+    text-align: center;
+}
+
+.profile-text h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 5px 0px 15px;
+    line-height: 1.1;
+    color: rgb(250, 193, 6);
+}
+
+.profile-text h3 {
+    color: white;
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+.profile-text h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 35px;
 }
 
 
