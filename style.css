@@ -73,12 +73,14 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+
 }
 
 .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
+
 }
 
 a {
