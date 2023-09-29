@@ -192,57 +192,114 @@ section {
     min-height: fit-content;
 }
 
-
 .section-container {
     display: flex;
 }
+
+
+.social-container a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border: 2px solid #313131;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #b6b6b6;
+    margin: 5px 5px;
+}
+
+.social-container a:hover {
+    transform: scale(1.1);
+    background-color: rgb(36, 36, 36);
+    color: #ff0077;
+    transition: ease.5s;
+    text-decoration: none;
+}
+
 
 /* Profile Section */
 
 #profile {
     display: flex;
     justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+    gap: 1rem;
+    height: 900vh;
 }
 
-.section__pic-container {
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+.section__text img {
+    padding-left: 120%;
+    height: 300px;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.header-text h1 {
+    text-align: center;
+    color: purple;
+    font-size: 60px;
+}
+
+.header-text h1 span {
+    color: red;
 }
 
 .section__text {
     align-self: center;
     text-align: center;
+    color: white;
 }
 
-
-
 .section__text p {
-    font-weight: 5;
+    font-weight: 600;
+    color: white;
 }
 
 .section__text__p1 {
     text-align: center;
+    color: white;
 }
 
 .section__text__p2 {
-    font-size: -1rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white;
 }
 
 .title {
-    font-size: 1.75rem;
+    font-size: 3rem;
     text-align: center;
+    color: purple;
+    margin-bottom: 20px;
 }
 
-#socials-container {
-    display: flex;
+.social-container {
+    align-items: center;
     justify-content: center;
-    margin-top: 1.75rem;
-    gap: 2rem;
+    margin-top: 10px;
+}
+
+.social-container a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border: 2px solid #860404;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #b6b6b6;
+    margin: 5px 5px;
+}
+
+.social-container a:hover {
+    transform: scale(1.1);
+    background-color: rgb(215, 206, 206);
+    color: #b20f1a;
+    transition: ease.5s;
 }
 
 /*Icon*/
@@ -250,14 +307,15 @@ section {
 .icon {
     cursor: pointer;
     height: 3rem;
+    background: pink;
+    border-radius: 3rem;
 }
 
 /* Buttons */
 
-
 .btn-container {
     display: flex;
-    justify-self: center;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -269,33 +327,58 @@ section {
     border-radius: 2rem;
 }
 
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(87, 5, 5) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: transparent;
+    color: palevioletred;
+}
+
+.btn-color-1:hover {
+    background: white;
+}
+
+.btn-color-2 {
+    background: none;
+    color: palevioletred;
+}
+
+.btn-color-2:hover {
+    background: white;
+}
+
 .btn-container {
-    gap: 1rem;
+    gap: 2rem;
 }
-
-.row {
-    width: 94%;
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-
 
 /* About Section */
 
 #about {
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
 }
 
 .about-containers {
-    gap: 22rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
 }
 
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+    color: purple;
 }
 
 .about-containers,
@@ -303,68 +386,50 @@ section {
     display: flex;
 }
 
-
+.about-pic {
+    border-radius: 2rem;
+}
 
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: rgb(172, 118, 139);
+    background: transparent;
     border-radius: 2rem;
-    border: whitesmoke 0.1rem solid;
-    border-color: purple;
-    text-align: center;
+    border: purple 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: left;
 }
+
 
 .section-container {
     gap: 4rem;
-    height: 75%;
+    height: 100%;
 }
 
-.section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+.section__pic-container img {
+    height: 300px;
+    width: auto;
+    margin: auto 20;
+    border-radius: 10%;
 }
 
 .arrow {
     position: absolute;
-    right: -3rem;
-    bottom: -100rem;
+    right: -5rem;
+    bottom: 2.5rem;
 }
 
-/* Skills Section */
+/* Experience Section */
 
 #experience {
     position: relative;
 }
 
 .experience-sub-title {
-    color: purple;
-    font-weight: 500;
-    font-size: 1rem;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
     margin-bottom: 2rem;
-}
-
-.experience-details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: left;
-}
-
-
-
-
-/* Experience Section */
-
-#experience {
-    position: center;
-}
-
-.experience-sub-title {
-    color: purple;
-    font-weight: 20;
-    font-size: 3rem;
-    margin-bottom: 10rem;
 }
 
 .experience-details-container {
@@ -393,31 +458,35 @@ article .icon {
     position: default;
 }
 
+
 /* Projects Section */
 
 #projects {
-    position: relative;
+    display: inline;
+    position: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .color-container {
     border-color: pink;
-    background: rgb(172, 118, 139);
+    background: transparent;
 }
 
 .project-img {
-
-    width: 50%;
-    height: 30%;
+    border-radius: 1rem;
+    width: 90%;
+    height: 90%;
 }
 
 .project-title {
-    margin: 2rem;
-    color: pink;
+    margin: 1rem;
+    color: purple;
 }
 
 .project-btn {
-    color: pink;
-    border-color: palevioletred;
+    color: purple;
+    border-color: pink;
 }
 
 
@@ -427,16 +496,16 @@ article .icon {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 200vh;
+    height: 100vh;
 }
 
 .contact-info-upper-container {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: pink 0.1rem solid;
-    border-color: purple;
-    background: plum;
+    border: rgb(163, 163, 163) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: transparent;
     margin: 2rem;
     padding: 0.5rem;
 }
@@ -461,33 +530,10 @@ article .icon {
     height: 2.5rem;
 }
 
-
-.box {
-    float: left;
-    height: 20px;
-    width: 20px;
-    margin-bottom: 15px;
-    border: 1px solid black;
-    clear: both;
-}
-
-.red {
-    background-color: red;
-}
-
-.green {
-    background-color: green;
-}
-
-.blue {
-    background-color: blue;
-}
-
-
 /* Footer */
 
 footer {
-    height: 1vh;
+    height: 26vh;
     margin: 0 1rem;
 }
 
